@@ -14,7 +14,8 @@ spec:
         app: guestbook-ui
     spec:
       containers:
-      - image: swr.cn-east-3.myhuaweicloud.com/kubesre/gcr.io/heptio-images/ks-guestbook-demo:0.2
+      #- image: swr.cn-east-3.myhuaweicloud.com/kubesre/gcr.io/heptio-images/ks-guestbook-demo:0.2
+      - image: nginx:1.29.3-alpine
         name: guestbook-ui
         ports:
         - containerPort: 80
